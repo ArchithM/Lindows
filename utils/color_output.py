@@ -29,7 +29,7 @@ class ColorOutput:
         'audio': Fore.CYAN,
         'video': Fore.MAGENTA + Style.BRIGHT,
         'document': Fore.YELLOW,
-        'code': Fore.GREEN,
+        'code': Fore.GREEN,      
     }
     
     EXTENSIONS = {
