@@ -332,7 +332,6 @@ class SystemCommands:
                 key, value = arg.split('=', 1)
                 os.environ[key] = value
             else:
-                # Just mark as exported (no-op in Python)
                 pass
         
         return ""
@@ -347,7 +346,6 @@ class SystemCommands:
     
     @staticmethod
     def which(args: List[str], cwd: str) -> str:
-        """Locate a command."""
         if not args:
             return ColorOutput.error("which: missing argument")
         
